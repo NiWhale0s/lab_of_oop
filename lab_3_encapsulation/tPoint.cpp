@@ -95,7 +95,7 @@ void tPoint::moveLinear(float widht, float height)
 void tPoint::moveChaotic(float widht, float height)
 {
 	int numb = rand() % 10 + 1;
-	if (numb < 3) {
+	if (numb < 2) {
 		angle = (rand() % 360) * M_PI / 180.0f;
 	}
 
