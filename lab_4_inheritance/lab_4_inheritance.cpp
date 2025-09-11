@@ -53,7 +53,7 @@ int main()
     y = static_cast<float>(rand() % HEIGHT);
     speed = 1.0f + static_cast<float>(rand() % 30) / 10.0f;
     angle = static_cast<float>(rand() % 360) * 3.14159f / 180.0f;
-    radius = 1.0f + static_cast<float>(rand() % 60) / 1.0f;
+    radius = 1.0f + static_cast<float>(rand() % 260) / 1.0f;
     Ellipse ellipse(x, y, speed, setColorCircle(), angle, radius);
 
     x = static_cast<float>(rand() % WIDTH);
