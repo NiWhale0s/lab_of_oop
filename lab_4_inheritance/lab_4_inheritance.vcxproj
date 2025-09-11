@@ -124,7 +124,25 @@
     </Link>
   </ItemDefinitionGroup>
   <ItemGroup>
+    <ClCompile Include="Circle.cpp" />
+    <ClCompile Include="Ellipse.cpp" />
     <ClCompile Include="lab_4_inheritance.cpp" />
+    <ClCompile Include="Rectagle.cpp" />
+    <ClCompile Include="Rhomb.cpp" />
+    <ClCompile Include="Section.cpp" />
+    <ClCompile Include="Shape.cpp" />
+    <ClCompile Include="tPoint.cpp" />
+    <ClCompile Include="Triangle.cpp" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="Circle.h" />
+    <ClInclude Include="Ellipse.h" />
+    <ClInclude Include="Rectagle.h" />
+    <ClInclude Include="Rhomb.h" />
+    <ClInclude Include="Section.h" />
+    <ClInclude Include="Shape.h" />
+    <ClInclude Include="tPoint.h" />
+    <ClInclude Include="Triangle.h" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Label="ExtensionTargets">
