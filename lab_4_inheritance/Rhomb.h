@@ -11,6 +11,6 @@ public:
 
 	float getSize();
 	void setSize(float size);
-	void draw(sf::RenderWindow& window);
+	void draw(sf::RenderWindow& window) override;
 };
 

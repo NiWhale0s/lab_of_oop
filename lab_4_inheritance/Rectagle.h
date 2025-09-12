@@ -15,6 +15,6 @@ public:
 
 	void setDistanceX(float distance_x);
 	void setDistanceY(float distance_y);
-	void draw(sf::RenderWindow& window);
+	void draw(sf::RenderWindow& window) override;
 };
 

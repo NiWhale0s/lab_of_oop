@@ -14,7 +14,7 @@ public:
 	float getOutline();
 	void setOutline(float outline);
 	void setRadius(float radius);
-	void draw(sf::RenderWindow& window);
+	void draw(sf::RenderWindow& window) override;
 
 };
 

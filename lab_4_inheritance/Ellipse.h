@@ -10,7 +10,7 @@ public:
 
 	float getRadius();
 	void setRadius(float radius);
-	void draw(sf::RenderWindow& window);
+	void draw(sf::RenderWindow& window) override;
 
 };
 

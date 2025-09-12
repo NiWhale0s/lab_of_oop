@@ -12,6 +12,7 @@ protected:
 
 public:
 	Shape(float xVal, float yVal, float speedVal, sf::Color colorVal, float angleVal) : x(xVal), y(yVal), speed(speedVal), color(colorVal), angle(angleVal) {}
+	virtual ~Shape() = default;
 
 	float getX();
 	float getY();
@@ -27,6 +28,8 @@ public:
 
 	void moveLinear(float widht, float height);
 	void moveChaotic(float widht, float height);
+
+	virtual void draw(sf::RenderWindow& window) = 0;
 
 };
 
