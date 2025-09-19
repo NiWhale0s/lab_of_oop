@@ -17,5 +17,7 @@ public:
 	void setSize(float size);
 	void setAngleLine(float angle_size);
 	void draw(sf::RenderWindow& window) override;
+	void moveLinear(float widht, float height) override;
+	void moveChaotic(float widht, float height) override;
 };
 

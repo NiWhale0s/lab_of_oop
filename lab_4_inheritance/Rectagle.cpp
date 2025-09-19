@@ -27,3 +27,46 @@ void Rectagle::draw(sf::RenderWindow& window)
     rectangle.setFillColor(color);
     window.draw(rectangle);
 }
+
+void Rectagle::moveLinear(float widht, float height)
+{
+	float newX = x + speed * cos(angle);
+	float newY = y + speed * sin(angle);
+
+	if (newX > widht || newX - distance_x < 0) {
+		angle = M_PI - angle;
+		newX = (newX - distance_x < 0) ? 0+distance_x : widht;
+	}
+
+	if (newY > height || newY - distance_y < 0) {
+		angle = -angle;
+		newY = (newY - distance_y < 0) ? 0 + distance_y : height;
+	}
+
+	x = newX;
+	y = newY;
+}
+
+void Rectagle::moveChaotic(float widht, float height)
+{
+	int numb = rand() % 100 + 1;
+	if (numb < 6) {
+		angle = (rand() % 360) * M_PI / 180.0f;
+	}
+
+	float newX = x + speed * cos(angle);
+	float newY = y + speed * sin(angle);
+
+	if (newX > widht || newX - distance_x < 0) {
+		angle = M_PI - angle;
+		newX = (newX - distance_x < 0) ? 0 + distance_x : widht;
+	}
+
+	if (newY > height || newY - distance_y < 0) {
+		angle = -angle;
+		newY = (newY - distance_y < 0) ? 0 + distance_y : height;
+	}
+
+	x = newX;
+	y = newY;
+}

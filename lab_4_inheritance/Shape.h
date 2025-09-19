@@ -1,6 +1,7 @@
 #pragma once
 
 #include <SFML/Graphics.hpp>
+# define M_PI           3.14159265358979323846 
 
 class Shape
 {
@@ -26,8 +27,8 @@ public:
 	void setColor(sf::Color color);
 	void setAngle(float angle);
 
-	void moveLinear(float widht, float height);
-	void moveChaotic(float widht, float height);
+	void virtual moveLinear(float widht, float height);
+	void virtual moveChaotic(float widht, float height);
 
 	virtual void draw(sf::RenderWindow& window) = 0;
 

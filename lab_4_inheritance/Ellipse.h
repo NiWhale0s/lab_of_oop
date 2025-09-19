@@ -11,6 +11,7 @@ public:
 	float getRadius();
 	void setRadius(float radius);
 	void draw(sf::RenderWindow& window) override;
-
+	void moveLinear(float widht, float height) override;
+	void moveChaotic(float widht, float height) override;
 };
 

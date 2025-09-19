@@ -16,5 +16,7 @@ public:
 	void setDistanceX(float distance_x);
 	void setDistanceY(float distance_y);
 	void draw(sf::RenderWindow& window) override;
+	void moveLinear(float widht, float height) override;
+	void moveChaotic(float widht, float height) override;
 };
 
